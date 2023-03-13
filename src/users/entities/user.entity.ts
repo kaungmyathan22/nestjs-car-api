@@ -2,8 +2,13 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class User {
+
     @PrimaryGeneratedColumn()
     id: number;
+
     @Column()
-    price: number;
+    email: string;
+
+    @Column()
+    password: string;
 }
