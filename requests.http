@@ -3,13 +3,31 @@
 GET http://localhost:3000/users/4
 
 ###
-POST http://localhost:3000/users
+POST http://localhost:3000/users/signup
 Content-Type:application/json
 
 {
-    "email":"2@gmail.com",
+    "email":"4@gmail.com",
     "password":"2@gmail.com"
 }
+
+###
+POST http://localhost:3000/users/signin
+Content-Type:application/json
+
+{
+    "email":"4@gmail.com",
+    "password":"2@gmail.com"
+}
+
+###
+GET http://localhost:3000/users/me
+Content-Type:application/json
+
+
+###
+GET http://localhost:3000/users/signout
+Content-Type:application/json
 
 
 ### get all users

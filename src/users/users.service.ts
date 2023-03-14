@@ -18,11 +18,16 @@ export class UsersService {
   }
 
   async findOne (id: number) {
+    console.log({ id })
     const user = await this.repo.findOne({ where: { id } });
     if (!user) {
       throw new NotFoundException("User not found");
     }
     return user;
+  }
+
+  async find (email: string) {
+    return await this.repo.find({ where: { email } });
   }
 
   async update (id: number, updateUserDto: UpdateUserDto) {
