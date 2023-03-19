@@ -1,0 +1,21 @@
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "make":"toyota",
+    "model":"corolla",
+    "year":1980,
+    "mileage":1000,
+    "lng":0,
+    "lat":0,
+    "price":500000
+}
+
+###
+POST http://localhost:3000/users/signin
+Content-Type:application/json
+
+{
+    "email":"4@gmail.com",
+    "password":"2@gmail.com"
+}
